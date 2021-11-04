@@ -20,6 +20,12 @@ ul, li{
     list-style: none;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .nav{
     width: 300px;
     height: 100vh;
@@ -28,10 +34,11 @@ ul, li{
     color: #403F3E;
     display: flex;
     flex-direction: column;
+
 }
 
 .nav__content{
-    flex: 1 1 auto;
+    flex: 1 0 auto;
 }
 .logo{
     display: flex;
@@ -148,12 +155,30 @@ ul, li{
     opacity: .9;
 }
 .right{
-    display: none;
     transition: all .3s;
 }
 .right:hover{
     opacity: .9;
 }
+
+
+.narrow{
+    width: 90px;
+}
+
+.hide{
+    display: none;
+}
+
+.small-logo{
+    font-size: 24px;
+}
+.small-photo{
+    width: 50px;
+    height: 50px;
+}
+
+
 @media screen  and (max-width:992px){
     .nav{
         width: 90px;
@@ -173,6 +198,8 @@ ul, li{
     }
     .left{
         display: none;
+        width: 25px;
+        height: 25px;
     }
     .right{
         display: block;
